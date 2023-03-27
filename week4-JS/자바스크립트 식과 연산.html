@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function digit8(v){
+                let str="";
+                for(let i=0;i<8;i++,v<<=1){
+                    if((v& 0x80)){
+                    str+="1";
+                }else str +="0";
+            }
+            return str;
+                }
+        </script>
+    </head>
+    <body>
+        증감연산자 ++a 는 a의 값을 증가시켜준후 증가된 값을 반환해주는 것이고<br>
+        증감연산자 a++ 는 a의 값을 증가시켜준후 증가 되기 전의 값을 반환해준다.<br>
+        <script>
+            let x=5, y=3;
+            let big=(x>y)?x:y;
+            document.write(big);
+        </script>
+        <br><h3>비트 논리 연산과 시프트 연산</h3>
+        <hr>
+        <script>
+            let x1=10, y=3;
+            document.write("<pre>");
+            document.write("x="+x+",y="+y+"<br>");
+            document.write("<pre>");
+        </script>
+
+    </body>
+</html>

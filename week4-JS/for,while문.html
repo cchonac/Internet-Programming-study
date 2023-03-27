@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>for문으로 10px~35px 크기 출력</h3>
+        <hr>
+        <script>
+            for(let size=10; size<=35; size+=5){
+                document.write("<span");
+                document.write("style='font_size:"+size+"px'>");
+                document.write(size+"px");
+                document.write("</span>");
+            }
+        </script>
+        
+        <h3>do-while 문으로 0에서 n까지의 합</h3>
+        <hr>
+        <script>
+            let a=prompt("0보다 큰 정수를 입력하세요", 0);
+            a=Number(a);
+            let i=0,sum=0;
+            do{
+                sum+=i;
+                i++;
+            
+            }while(i<=a);
+            document.write("0에서" + a + "까지 합은" + sum);
+
+        </script>
+        
+    </body>
+</html>

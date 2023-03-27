@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자바스크립트 전역함수</title>
+    </head>
+    <body>
+        <script>
+            let res=eval("2*3+4*6");
+            document.write("eval(\"2*3+4*6\")의 값은"+res+"<br>"); // \*은 문자를 그대로 쓰고 싶으면 쓰는 거 
+            let m = parseInt("32");       
+            document.write("parseInt(\"32\")는"+m+"<br>");
+            n=parseInt("hello");
+            if(isNaN(n)){ //isNaN(value)에  value가 숫자가 아니면 true 리턴
+                document.write("hello는 숫자가 아닙니다.")
+
+            }
+        </script>
+
+    </body>
+</html>
